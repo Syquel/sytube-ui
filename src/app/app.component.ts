@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, Output} from '@angular/core';
+import {BitrateOptions} from "@videogular/ngx-videogular/core";
+import * as dashjs from "dashjs";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sytube-ui';
+
+  private currentStream: string = "http://localhost:8080/yoga.mpd";
+
+  public logBitrates(bitRates: BitrateOptions[]): void {
+    for (let bitRate in bitRates) {
+      console.log("Bitrate: " + bitRate);
+    }
+  }
+
 }
