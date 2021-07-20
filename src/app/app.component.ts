@@ -10,7 +10,7 @@ import * as dashjs from "dashjs";
 export class AppComponent {
   title = 'sytube-ui';
 
-  private currentStream: string = "http://localhost:8080/yoga.mpd";
+  currentStream: string = "http://localhost:8080/yoga.mpd";
 
   public logBitrates(bitRates: BitrateOptions[]): void {
     for (let bitRate in bitRates) {
