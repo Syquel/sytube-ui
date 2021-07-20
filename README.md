@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
 
+## Create nginx Docker image
+
+Run `docker build -t nginx-sytube contrib/nginx/` and `docker run --rm --name nginx-sytube -p 8080:80 -v /path/to/files:/usr/share/nginx/html:ro nginx-sytube`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
