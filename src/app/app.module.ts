@@ -1,26 +1,18 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import {VgCoreModule} from "@videogular/ngx-videogular/core";
-import {VgControlsModule} from "@videogular/ngx-videogular/controls";
-import {VgOverlayPlayModule} from "@videogular/ngx-videogular/overlay-play";
-import {VgBufferingModule} from "@videogular/ngx-videogular/buffering";
-import {VgStreamingModule} from "@videogular/ngx-videogular/streaming";
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {ShakaPlayerComponent} from './shaka-player/shaka-player.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShakaPlayerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    VgCoreModule,
-    VgControlsModule,
-    VgOverlayPlayModule,
-    VgBufferingModule,
-    VgStreamingModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

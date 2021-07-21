@@ -1,6 +1,3 @@
-<vg-player>
-  <video #media [vgMedia]="$any(media)" #vgDash="vgDash" [vgDash]="currentStream" (onGetBitrates)="logBitrates($event)" id="singleVideo" preload="auto" controls crossorigin>
-  </video>
-</vg-player>
+<app-shaka-player videoUrl="http://localhost:8080/yoga_stream.mpd"></app-shaka-player>
 
 <router-outlet></router-outlet>

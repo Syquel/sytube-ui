@@ -31,11 +31,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/shaka-player/dist/controls.css"
             ],
-            "scripts": [
-              "node_modules/dashjs/dist/dash.all.debug.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -103,9 +102,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-              "node_modules/dashjs/dist/dash.all.debug.js"
-            ]
+            "scripts": []
           }
         }
       }
